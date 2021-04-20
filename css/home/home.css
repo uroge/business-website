@@ -1,0 +1,210 @@
+.heading-tertiary {
+  font-size: 0.938rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where normal styles apply
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+.middle {
+  padding: 3.7rem 0 2.7rem 0;
+  background-color: #e8ebf1;
+}
+.middle__row {
+  justify-content: space-between;
+}
+@media only screen and (max-width: 56.25em) {
+  .middle__row {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .middle__single {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .middle__single {
+    margin-bottom: 2rem;
+  }
+}
+.middle__single-title {
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.middle__single-icon {
+  background-color: #2aacc8;
+  padding: 0.8rem;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 1.3rem;
+}
+@media only screen and (max-width: 75em) {
+  .middle__single-icon {
+    margin-right: 0.4rem;
+  }
+}
+.middle__single p {
+  font-size: 0.9rem;
+}
+
+.latest-works {
+  padding-bottom: 2rem;
+}
+.latest-works__row-1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e8ebf1;
+}
+.latest-works__icon {
+  color: #2aacc8;
+  font-size: 1.5rem;
+  margin-right: 1.563rem;
+}
+.latest-works__arrows {
+  display: flex;
+  justify-content: flex-end;
+}
+.latest-works__arrows i {
+  height: 1.25rem;
+  background-color: #81e4ed;
+  width: 1.25rem;
+  text-align: center;
+  line-height: 1.25rem;
+  border-radius: 50%;
+}
+.latest-works__arrows i:not(:last-child) {
+  margin-right: 0.8rem;
+}
+.latest-works__row-2 {
+  justify-content: space-around;
+  padding: 1.3rem 0 2.3rem 0;
+  border-bottom: 2px solid #e8ebf1;
+}
+.latest-works__image {
+  height: 10rem;
+  width: 14rem;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 62.5em) {
+  .latest-works__image {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .latest-works__image {
+    width: 80%;
+  }
+}
+.latest-works__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.latest-works__image .image-layer {
+  position: absolute;
+  width: 100%;
+  height: 52%;
+  top: 48%;
+  background-color: #2aacc8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latest-works__image .image-layer i {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.latest-works__image .image-layer i:not(:last-child) {
+  margin-right: 1.8rem;
+}
+.latest-works__row-3 {
+  padding: 1rem 0 2.1rem 0;
+}
+.latest-works__row-3 p:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+.latest-works__row-3 .signature {
+  font-style: italic;
+  font-weight: bold;
+  font-style: 0.8rem;
+}
+@media only screen and (max-width: 51.875em) {
+  .latest-works__row-3 {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .latest-works__col {
+    margin-bottom: 2rem;
+  }
+}
+.latest-works__clients-logos {
+  justify-content: center;
+}
+.latest-works__clients-logo {
+  height: 6.25rem;
+  width: 10rem;
+  -moz-box-shadow: inset 0 0 10px #e8ebf1;
+  -webkit-box-shadow: inset 0 0 10px #e8ebf1;
+  box-shadow: inset 0 0 10px #e8ebf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .latest-works__clients-logo {
+    width: 80%;
+  }
+}
+.latest-works__download {
+  padding: 0 2rem;
+  background-color: #e8fcfe;
+  border: 2px solid #81e4ed;
+  height: 9rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 51.875em) {
+  .latest-works__download {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 13rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .latest-works__download {
+    height: 19rem;
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .latest-works__download p {
+    width: 100%;
+  }
+}
+.latest-works__text {
+  width: 65%;
+}
+@media only screen and (max-width: 51.875em) {
+  .latest-works__text {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

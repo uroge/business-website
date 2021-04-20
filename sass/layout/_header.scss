@@ -1,0 +1,38 @@
+.header {
+    background-color: $color-main-light;
+    padding: 1.25rem 0 2.8rem 0;
+}
+
+
+// Carousel
+.carousel {
+    position: relative;
+
+    &-indicators {
+        position: absolute;
+        top: 101%;
+        width: 15%;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        & li {
+            background-color: $color-main-dark-2!important;
+        }
+
+        & .active {
+            background-color: $color-white!important;
+        }
+    }
+
+    &-dot {
+        height: .87rem!important;
+        width: .87rem!important;
+        border-radius: 50%;
+        background-color: $color-white!important;
+
+        @include respond(phone) {
+            height: .4rem!important;
+            width: .4rem!important;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "business-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/main/main.css sass/pages/home.scss:css/home/home.css sass/pages/portfolio.scss:css/portfolio/portfolio.css"
+  },
+  "author": "Uros Milosavljevic",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

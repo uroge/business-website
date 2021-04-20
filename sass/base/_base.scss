@@ -1,0 +1,41 @@
+@import "mixins";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+// Custom container width
+.container {
+    max-width: 62.5rem;
+
+    @include respond(tab-large) {
+        max-width: 60rem;
+    }
+
+    @include respond(tab-medium) {
+        max-width: 54rem;
+    }
+
+    @include respond(tab-small) {
+        max-width: 49rem;
+    }
+
+    @include respond(tab-x-small) {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.col {
+    @include respond(phone) {
+        max-width: 90%;
+    }
+}
