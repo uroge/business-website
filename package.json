@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/main.scss:css/main/main.css sass/pages/home.scss:css/home/home.css sass/pages/portfolio.scss:css/portfolio/portfolio.css"
+    "sass": "sass --watch sass/main.scss:css/main/main.css sass/pages/home.scss:css/home/home.css sass/pages/portfolio.scss:css/portfolio/portfolio.css sass/pages/contact.scss:css/contact/contact.css"
   },
   "author": "Uros Milosavljevic",
   "license": "ISC",

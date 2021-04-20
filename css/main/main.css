@@ -105,7 +105,7 @@ $breakpoint arguement choices:
   color: #000;
 }
 
-.download-btn:link, .download-btn:visited {
+.blue-btn:link, .blue-btn:visited {
   background-image: linear-gradient(to bottom, #81e4ed, #2aacc8);
   padding: 1rem 2rem;
   width: 100%;
@@ -117,15 +117,38 @@ $breakpoint arguement choices:
   box-shadow: 0px 5px 5px #e8ebf1;
 }
 @media only screen and (max-width: 37.5em) {
-  .download-btn:link, .download-btn:visited {
+  .blue-btn:link, .blue-btn:visited {
     padding: 0.8rem;
   }
 }
-.download-btn:hover {
+.blue-btn:hover {
   text-decoration: none;
 }
 
-.download-icon {
+.submit-btn:link, .submit-btn:visited {
+  background-image: linear-gradient(to bottom, #81e4ed, #2aacc8);
+  padding: 1rem 1.5rem;
+  width: 19%;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #000 !important;
+  font-weight: bold;
+  border: 1px solid #2aacc8;
+  box-shadow: 0px 5px 5px #e8ebf1;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .submit-btn:link, .submit-btn:visited {
+    padding: 0.8rem;
+  }
+}
+.submit-btn:link:hover, .submit-btn:visited:hover {
+  text-decoration: none;
+}
+
+.download-icon,
+.arrow-icon {
   color: #fff;
   font-size: 1.5rem;
   margin-right: 1.5rem;

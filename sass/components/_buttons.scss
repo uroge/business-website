@@ -23,7 +23,7 @@
     }
 }
 
-.download-btn {
+.blue-btn {
     &:link,
     &:visited {
         background-image: linear-gradient(to bottom, $color-main-light, $color-main-dark);
@@ -46,7 +46,33 @@
     }
 }
 
-.download-icon {
+.submit-btn {
+    &:link,
+    &:visited {
+        background-image: linear-gradient(to bottom, $color-main-light, $color-main-dark);
+        padding: 1rem 1.5rem;
+        width: 19%;
+        border-radius: 6px;
+        text-transform: uppercase;
+        color: $color-black!important;
+        font-weight: bold;
+        border: 1px solid $color-main-dark;
+        box-shadow: 0px 5px 5px $color-grey;
+        display: flex;
+        align-items: center;
+
+        @include respond(phone) {
+            padding: .8rem;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.download-icon,
+.arrow-icon {
     color: $color-white;
     font-size: 1.5rem;
     margin-right: 1.5rem;

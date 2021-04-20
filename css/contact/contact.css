@@ -1,0 +1,140 @@
+.heading-tertiary {
+  font-size: 0.938rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  border-bottom: 2px solid #e8ebf1;
+}
+.section-heading-title {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.section-heading-title i {
+  color: #2aacc8;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where normal styles apply
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.contact {
+  padding-top: 1.6rem;
+}
+.contact__row {
+  padding-top: 1.9rem;
+}
+.contact__paragraph {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  letter-spacing: 0px;
+}
+.contact__paragraph a {
+  color: #2aacc8;
+}
+.contact__paragraph a:hover {
+  text-decoration: none;
+  animation: pulsate 0.8s infinite;
+}
+.contact__form {
+  margin-bottom: 2.5rem;
+}
+.contact .form-group {
+  margin-bottom: 0.5rem;
+}
+.contact__label {
+  font-size: 0.9rem;
+  letter-spacing: 0px;
+  margin-bottom: 0.4rem;
+}
+.contact__input {
+  padding: 0.1rem;
+  border-radius: 0px;
+  border: 1px solid #b4bac5;
+  width: 79%;
+  font-family: inherit;
+  color: #000 !important;
+}
+.contact__input:focus {
+  border: 1px solid #2aacc8;
+  outline: none;
+  box-shadow: none;
+}
+.contact__message {
+  margin-bottom: 1.2rem !important;
+}
+.contact__textarea {
+  height: 9.5rem !important;
+}
+.contact__map {
+  margin-top: 0.4rem;
+  padding: 1.3rem;
+  background-color: #e8fcfe;
+  border: 2px solid #81e4ed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__map-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contact__map-iframe {
+  border: none;
+  height: 13rem;
+}
+.contact__location {
+  margin-top: 2rem;
+}
+.contact__location p {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: -0.2rem;
+}
+.contact__location-address {
+  margin-top: 0.8rem;
+}
+.contact__location-phone {
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=contact.css.map */

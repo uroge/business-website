@@ -4,6 +4,21 @@
   text-transform: uppercase;
 }
 
+.section-heading {
+  border-bottom: 2px solid #e8ebf1;
+}
+.section-heading-title {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.section-heading-title i {
+  color: #2aacc8;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -44,20 +59,6 @@ $breakpoint arguement choices:
 .portfolio {
   padding-top: 1.6rem;
 }
-.portfolio__heading {
-  border-bottom: 2px solid #e8ebf1;
-}
-.portfolio__heading-title {
-  display: flex;
-  align-items: center;
-  align-items: center;
-  margin-bottom: 0.8rem;
-}
-.portfolio__heading-title i {
-  color: #2aacc8;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
 .portfolio__links {
   padding-top: 1rem;
   border-bottom: 2px solid #e8ebf1;
@@ -65,6 +66,18 @@ $breakpoint arguement choices:
 .portfolio__links-list {
   display: flex;
   list-style: none;
+}
+@media only screen and (max-width: 51.875em) {
+  .portfolio__links-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .portfolio__links-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .portfolio__links-link {
   padding: 0.4rem 1rem;
@@ -86,6 +99,11 @@ $breakpoint arguement choices:
   padding-top: 2.5rem;
   justify-content: space-between;
   border-bottom: 2px solid #e8ebf1;
+}
+@media only screen and (max-width: 62.5em) {
+  .portfolio__images {
+    justify-content: space-around;
+  }
 }
 .portfolio__image {
   height: 10rem;

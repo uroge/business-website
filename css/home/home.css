@@ -4,6 +4,21 @@
   text-transform: uppercase;
 }
 
+.section-heading {
+  border-bottom: 2px solid #e8ebf1;
+}
+.section-heading-title {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.section-heading-title i {
+  color: #2aacc8;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait

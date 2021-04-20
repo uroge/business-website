@@ -5,22 +5,6 @@
 
 .portfolio {
     padding-top: 1.6rem;
-    &__heading {
-        
-        border-bottom: 2px solid $color-grey;
-        &-title {
-            display: flex;
-            align-items: center;
-            align-items: center;
-            margin-bottom: .8rem;
-
-            i {
-                color: $color-main-dark;
-                font-size: 1.5rem;
-                margin-right: 1rem;
-            }
-        }
-    }
 
     &__links {
         padding-top: 1rem;
@@ -29,6 +13,18 @@
         &-list {
             display: flex;
             list-style: none;
+
+            @include respond(tab-x-small) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        &-item {
+            @include respond(tab-x-small) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
         }
 
         &-link {
@@ -55,6 +51,10 @@
         padding-top: 2.5rem;
         justify-content: space-between;
         border-bottom: 2px solid $color-grey;
+
+        @include respond(tab-medium) {
+            justify-content: space-around;
+        }
     }
 
     &__image {
