@@ -116,18 +116,24 @@
             height: 52%;
             top: 48%;
             background-color: $color-main-dark;
-            display: flex;
             justify-content: center;
             align-items: center;
+            display: none;
+            animation: moveInBottom .8s;
             
-            i {
+            a {
                 color: $color-white;
                 font-size: 1.8rem;
+                animation: moveInBottom 1s;
 
                 &:not(:last-child) {
                     margin-right: 1.8rem;
                 }
             }
+        }
+
+        &:hover .image-layer {
+            display: flex;
         }
     }
 

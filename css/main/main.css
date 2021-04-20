@@ -81,6 +81,16 @@ $breakpoint arguement choices:
     box-shadow: none;
   }
 }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .read-more-btn:link, .read-more-btn:visited {
   color: #2aacc8;
   text-decoration: none;

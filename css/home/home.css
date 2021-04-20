@@ -120,16 +120,21 @@ $breakpoint arguement choices:
   height: 52%;
   top: 48%;
   background-color: #2aacc8;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+  animation: moveInBottom 0.8s;
 }
-.latest-works__image .image-layer i {
+.latest-works__image .image-layer a {
   color: #fff;
   font-size: 1.8rem;
+  animation: moveInBottom 1s;
 }
-.latest-works__image .image-layer i:not(:last-child) {
+.latest-works__image .image-layer a:not(:last-child) {
   margin-right: 1.8rem;
+}
+.latest-works__image:hover .image-layer {
+  display: flex;
 }
 .latest-works__row-3 {
   padding: 1rem 0 2.1rem 0;
