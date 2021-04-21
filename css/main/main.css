@@ -1,16 +1,3 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where normal styles apply
-
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-*/
 *,
 *::after,
 *::before {
@@ -54,19 +41,6 @@ body {
   }
 }
 
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where normal styles apply
-
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-*/
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -115,6 +89,7 @@ $breakpoint arguement choices:
   font-weight: bold;
   border: 1px solid #2aacc8;
   box-shadow: 0px 5px 5px #e8ebf1;
+  transition: all 0.2s;
 }
 @media only screen and (max-width: 37.5em) {
   .blue-btn:link, .blue-btn:visited {
@@ -123,6 +98,8 @@ $breakpoint arguement choices:
 }
 .blue-btn:hover {
   text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .submit-btn:link, .submit-btn:visited {
@@ -137,6 +114,22 @@ $breakpoint arguement choices:
   box-shadow: 0px 5px 5px #e8ebf1;
   display: flex;
   align-items: center;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 62.5em) {
+  .submit-btn:link, .submit-btn:visited {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .submit-btn:link, .submit-btn:visited {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .submit-btn:link, .submit-btn:visited {
+    width: 35%;
+  }
 }
 @media only screen and (max-width: 37.5em) {
   .submit-btn:link, .submit-btn:visited {
@@ -145,6 +138,8 @@ $breakpoint arguement choices:
 }
 .submit-btn:link:hover, .submit-btn:visited:hover {
   text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .download-icon,
@@ -400,11 +395,23 @@ $breakpoint arguement choices:
     width: 30%;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .footer__connect {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
 .footer__icons {
   height: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__icons {
+    justify-content: center;
+  }
 }
 .footer__icons img {
   height: 3.2rem;

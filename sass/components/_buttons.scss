@@ -1,9 +1,5 @@
 @import "../base/animations";
 
-// .btn {
-
-// }
-
 .read-more-btn {
     &:link,
     &:visited {
@@ -35,7 +31,7 @@
         font-weight: bold;
         border: 1px solid $color-main-dark;
         box-shadow: 0px 5px 5px $color-grey;
-
+        transition: all .2s;
         @include respond(phone) {
             padding: .8rem;
         }
@@ -43,6 +39,8 @@
 
     &:hover {
         text-decoration: none;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
     }
 }
 
@@ -60,6 +58,19 @@
         box-shadow: 0px 5px 5px $color-grey;
         display: flex;
         align-items: center;
+        transition: all .3s;
+
+        @include respond(tab-medium) {
+            width: 20%;
+        }
+
+        @include respond(tab-x-small) {
+            width: 25%;
+        }
+
+        @include respond(phone) {
+            width: 35%;
+        }
 
         @include respond(phone) {
             padding: .8rem;
@@ -67,6 +78,8 @@
 
         &:hover {
             text-decoration: none;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
         }
     }
 }

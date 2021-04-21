@@ -19,19 +19,6 @@
   margin-right: 1rem;
 }
 
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where normal styles apply
-
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-*/
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -61,6 +48,11 @@ $breakpoint arguement choices:
 }
 .contact__row {
   padding-top: 1.9rem;
+}
+@media only screen and (max-width: 51.875em) {
+  .contact__row {
+    justify-content: center;
+  }
 }
 .contact__paragraph {
   font-size: 0.9rem;
@@ -93,6 +85,11 @@ $breakpoint arguement choices:
   font-family: inherit;
   color: #000 !important;
 }
+@media only screen and (max-width: 51.875em) {
+  .contact__input {
+    width: 100%;
+  }
+}
 .contact__input:focus {
   border: 1px solid #2aacc8;
   outline: none;
@@ -124,6 +121,11 @@ $breakpoint arguement choices:
 }
 .contact__location {
   margin-top: 2rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .contact__location {
+    margin-bottom: 5rem;
+  }
 }
 .contact__location p {
   font-size: 0.9rem;
