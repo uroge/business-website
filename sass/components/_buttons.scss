@@ -1,6 +1,12 @@
 @import "../base/animations";
 
 .read-more-btn {
+    color: $color-main-dark;
+    text-decoration: none;
+    transition: all .4s;
+    border: none;
+    background-color: transparent;
+
     &:link,
     &:visited {
         color: $color-main-dark;
@@ -69,7 +75,7 @@
         }
 
         @include respond(phone) {
-            width: 35%;
+            width: 40%;
         }
 
         @include respond(phone) {

@@ -58,12 +58,19 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(5rem);
+    transform: translateY(0.7rem);
   }
   100% {
     opacity: 1;
     transform: translate(0);
   }
+}
+.read-more-btn {
+  color: #2aacc8;
+  text-decoration: none;
+  transition: all 0.4s;
+  border: none;
+  background-color: transparent;
 }
 .read-more-btn:link, .read-more-btn:visited {
   color: #2aacc8;
@@ -128,7 +135,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .submit-btn:link, .submit-btn:visited {
-    width: 35%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -284,6 +291,12 @@ body {
   .carousel-dot {
     height: 0.4rem !important;
     width: 0.4rem !important;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .carousel-dot {
+    height: 0.2rem !important;
+    width: 0.2rem !important;
   }
 }
 

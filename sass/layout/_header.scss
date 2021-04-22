@@ -33,5 +33,10 @@
             height: .4rem!important;
             width: .4rem!important;
         }
+
+        @include respond(phone-small) {
+            height: .2rem!important;
+            width: .2rem!important;
+        }
     }
 }

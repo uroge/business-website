@@ -36,7 +36,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(5rem);
+    transform: translateY(0.7rem);
   }
   100% {
     opacity: 1;
@@ -60,6 +60,7 @@
   letter-spacing: 0px;
 }
 .contact__paragraph a {
+  font-size: 1rem;
   color: #2aacc8;
 }
 .contact__paragraph a:hover {

@@ -7,7 +7,6 @@
     padding-top: 1.6rem;
 
     &__links {
-        padding-top: 1rem;
         border-bottom: 2px solid $color-grey;
 
         &-list {
@@ -58,25 +57,125 @@
     }
 
     &__image {
-        height: 10rem;
-        width: 22%;
-        margin-bottom: 2.5rem;
         position: relative;
-        overflow: hidden;
+        height: 0;
+        width: 22%;
+        padding-top: 16%;
+        margin-bottom: 2.5rem;
 
         @include respond(tab-medium) {
             width: 40%;
+            padding-top: 20%;
             margin-bottom: 1rem;
         }
 
         @include respond(phone) {
-            width: 80%
+            width: 80%;
+            padding-top: 50%;
         }
-        
-        img {
+
+        .image {
+            position: absolute;
+            top: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+
+            &-1 {
+                background: url('../../img/portfolio/img-1.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-2 {
+                background: url('../../img/portfolio/img-2.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-3 {
+                background: url('../../img/portfolio/img-3.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-4 {
+                background: url('../../img/portfolio/img-4.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-5 {
+                background: url('../../img/portfolio/img-5.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-6 {
+                background: url('../../img/portfolio/img-6.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-7 {
+                background: url('../../img/portfolio/img-7.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-8 {
+                background: url('../../img/portfolio/img-8.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-9 {
+                background: url('../../img/portfolio/img-9.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-10 {
+                background: url('../../img/portfolio/img-10.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-11 {
+                background: url('../../img/portfolio/img-11.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-12 {
+                background: url('../../img/portfolio/img-12.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-13 {
+                background: url('../../img/our-works-img-1.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-14 {
+                background: url('../../img/our-works-img-2.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-15 {
+                background: url('../../img/our-works-img-3.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-16 {
+                background: url('../../img/our-works-img-4.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
         }
 
         .image-layer {
