@@ -142,12 +142,16 @@
         box-sizing: border-box;
 
         @include respond(tab-medium) {
-            width: 40%;
+            width: 33.3%;
+        }
+
+        @include respond(tab-x-small) {
+            width: 50%;
             margin-bottom: 1rem;
         }
 
         @include respond(phone) {
-            width: 80%
+            width: 100%
         }
         
         img {

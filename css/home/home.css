@@ -145,13 +145,18 @@
 }
 @media only screen and (max-width: 62.5em) {
   .latest-works__image {
-    width: 40%;
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .latest-works__image {
+    width: 50%;
     margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .latest-works__image {
-    width: 80%;
+    width: 100%;
   }
 }
 .latest-works__image img {
