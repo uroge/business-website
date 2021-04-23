@@ -80,6 +80,34 @@
     height: 3rem;
   }
 }
+.middle__paragraph-active {
+  height: 14rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .middle__paragraph-active {
+    height: 9rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .middle__paragraph-active {
+    height: 9rem;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .middle__paragraph-active {
+    height: 11rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .middle__paragraph-active {
+    height: 6rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .middle__paragraph-active {
+    height: 7rem;
+  }
+}
 
 .latest-works {
   padding-bottom: 2rem;

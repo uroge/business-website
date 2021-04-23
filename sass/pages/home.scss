@@ -61,6 +61,28 @@
         @include respond(phone) {
             height: 3rem;
         }
+
+        &-active {
+            height: 14rem;
+
+            @include respond(tab-medium) {
+                height: 9rem;
+            }
+
+            @include respond(tab-small) {
+                height: 9rem;
+            }
+
+            @include respond(tab-x-small) {
+                height: 11rem;
+            }
+
+            @media only screen and (max-width: 48em) { height: 6rem; };
+    
+            @include respond(phone) {
+                height: 7rem;
+            }
+        }
     }
 }
 
