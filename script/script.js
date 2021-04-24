@@ -1,13 +1,13 @@
 (function(){
-    var paragraphs = document.querySelectorAll('.middle__paragraph'),
-        sliderArrowLeft = document.getElementById('arrow-left'),
-        sliderArrowRight = document.getElementById('arrow-right'),
+    var paragraphs = document.querySelectorAll('.js-middle__paragraph'),
+        sliderArrowLeft = document.getElementById('js-arrow-left'),
+        sliderArrowRight = document.getElementById('js-arrow-right'),
         imagesPerSlide = 4,
-        imagesContainer = document.querySelector('.latest-works__images'),
-        images = document.querySelectorAll('.latest-works__image'),
+        imagesContainer = document.querySelector('.js-latest-works__images'),
+        images = document.querySelectorAll('.js-latest-works__image'),
         numberOfImages = images[0] ? images.length - 1 : null,
         maxSlides = Math.floor(numberOfImages / imagesPerSlide),
-        imagesRow = document.querySelector('.latest-works__row-2'),
+        imagesRow = document.querySelector('.js-latest-works__row-2'),
         sliderWidth = imagesRow ? imagesRow.offsetWidth : null,
         slideIndex = 0;
 
@@ -28,7 +28,9 @@
     });
 
     window.addEventListener('resize', function () {
-        sliderWidth = imagesRow.offsetWidth;
+        if(imagesRow) {
+            sliderWidth = imagesRow.offsetWidth;
+        }
         
         if(sliderWidth) {
             if(sliderWidth < 480) {

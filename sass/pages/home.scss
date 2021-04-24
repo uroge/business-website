@@ -63,7 +63,7 @@
         }
 
         &-active {
-            height: 14rem;
+            height: 12rem;
 
             @include respond(tab-medium) {
                 height: 9rem;
