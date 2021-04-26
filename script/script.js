@@ -13,15 +13,17 @@
 
     document.body.addEventListener('click', function(e) {
         e.preventDefault();
-        var target = e.target;
+        var target = e.target.parentElement;
         if (target.classList.contains('js-read-more-btn')) {
-            if(paragraphs) {
+            if(paragraphs && paragraphs[parseInt(target.getAttribute('data-id'))] && target.querySelector('span') && target.querySelector('i')) {
                 if(!paragraphs[parseInt(target.getAttribute('data-id'))].classList.contains('middle__paragraph-active')) {
                     paragraphs[parseInt(target.getAttribute('data-id'))].classList.add('middle__paragraph-active');
-                    target.innerHTML = '<i class="fas fa-angle-up"></i> Read less';
+                    target.querySelector('span').textContent = 'Read less';
+                    target.querySelector('i').style.transform = 'rotate(-90deg)';
                 } else {
                     paragraphs[parseInt(target.getAttribute('data-id'))].classList.remove('middle__paragraph-active');
-                    target.innerHTML = '<i class="fas fa-angle-right"></i> Read more';
+                    target.querySelector('span').textContent = 'Read more';
+                    target.querySelector('i').style.transform = 'rotate(0)';
                 }
             }
         }
@@ -48,9 +50,8 @@
             }
         }
     });
-
-
-    if(sliderArrowLeft) {
+    
+    if(sliderArrowRight && sliderArrowLeft && imagesContainer) {
         sliderArrowLeft.addEventListener('click', function() {
             if(!(sliderArrowLeft.classList.contains('disabled'))){
                 slideIndex = slideIndex - 1;
@@ -65,9 +66,7 @@
                 return;
             }
         });
-    }
-    
-    if(sliderArrowRight) {
+
         sliderArrowRight.addEventListener('click', function() {
             if(!(sliderArrowRight.classList.contains('disabled'))) {
                 slideIndex = slideIndex + 1;

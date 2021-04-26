@@ -68,22 +68,21 @@ body {
 .read-more-btn {
   color: #2aacc8;
   text-decoration: none;
-  transition: all 0.4s;
   border: none;
   background-color: transparent;
 }
 .read-more-btn:link, .read-more-btn:visited {
   color: #2aacc8;
   text-decoration: none;
-  transition: all 0.4s;
 }
 .read-more-btn:hover {
   animation: pulsate 1s infinite;
   text-decoration: none;
   color: #000;
 }
-.read-more-btn i {
+.read-more-btn__arrow {
   color: #000;
+  transition: transform 0.8s;
 }
 
 .blue-btn:link, .blue-btn:visited {

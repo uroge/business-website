@@ -3,7 +3,6 @@
 .read-more-btn {
     color: $color-main-dark;
     text-decoration: none;
-    transition: all .4s;
     border: none;
     background-color: transparent;
 
@@ -11,7 +10,6 @@
     &:visited {
         color: $color-main-dark;
         text-decoration: none;
-        transition: all .4s;
     }
 
     &:hover {
@@ -20,8 +18,9 @@
         color: $color-black;
     }
 
-    i {
+    &__arrow {
         color: $color-black;
+        transition: transform .8s;
     }
 }
 
