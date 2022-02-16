@@ -140,9 +140,6 @@
         border-bottom: 2px solid $color-grey;
         height: 10rem;
         overflow: hidden;
-        @include respond(tab-medium) {
-            
-        }
     }
 
     &__images {
